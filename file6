@@ -1,0 +1,56 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Sunderlal Bahuguna")
+
+# Create a subheader for the webpage
+st.subheader("Indian Environmentalist")
+
+# Create a button for Sunderlal Bahuguna's profile
+if st.button("View Profile"):
+    # Create a container for the profile information
+    with st.container():
+        # Create a subheader for the profile information
+        st.subheader("About Sunderlal Bahuguna")
+        
+        # Create a paragraph for the profile information
+        st.write("Sunderlal Bahuguna is one of the oldest environmentalists living today with 92 years of age. He was the leader of a famous Chipko movement and is a follower of Mahatma Gandhi's philosophy of Satyagraha and Non-violence.")
+        
+        # Create a subheader for the Chipko movement
+        st.subheader("Chipko Movement")
+        
+        # Create a paragraph for the Chipko movement
+        st.write("He was first a member of the Chipko movement in the 1970s. Later he was a member of the Anti-Tehri Dam movement, which was started in the 1980s and ended in early 2004.")
+        
+        # Create a subheader for the awards and recognition
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards and recognition
+        st.write("* Awarded the Padma Vibhushan on 26 January 2009, India's second-highest civilian award")
+
+# Create a button for Sunderlal Bahuguna's work
+if st.button("View Work"):
+    # Create a container for the work information
+    with st.container():
+        # Create a subheader for the work information
+        st.subheader("Work")
+        
+        # Create a paragraph for the work information
+        st.write("Sunderlal Bahuguna has worked extensively on environmental issues, including the preservation of forests in the Himalayas. He has been a pioneer in the field of environmentalism in India.")
+        
+        # Create a subheader for the organizations founded by Sunderlal Bahuguna
+        st.subheader("Organizations Founded")
+        
+        # Create a bullet point list for the organizations founded by Sunderlal Bahuguna
+        st.write("* Chipko Movement")
+        st.write("* Anti-Tehri Dam movement")
+
+# Create a button for Sunderlal Bahuguna's awards
+if st.button("View Awards"):
+    # Create a container for the awards information
+    with st.container():
+        # Create a subheader for the awards information
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards
+        st.write("* Padma Vibhushan on 26 January 2009, India's second-highest civilian award")
