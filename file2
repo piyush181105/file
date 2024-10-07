@@ -1,0 +1,57 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Sunita Narain")
+
+# Create a subheader for the webpage
+st.subheader("Environmental Activist and Director-General of Centre for Science and Environment (CSE)")
+
+# Create a button for Sunita Narain's profile
+if st.button("View Profile"):
+    # Create a container for the profile information
+    with st.container():
+        # Create a subheader for the profile information
+        st.subheader("About Sunita Narain")
+        
+        # Create a paragraph for the profile information
+        st.write("Sunita Narain is the publisher of Down To Earth, and Director-General of Centre for Science and Environment (CSE). She started working as an Environmentalist in the 1980s along with Anil Agarwal, another prominent environmentalist. In 2005, Sunita chaired the Tiger Task Force for the conversation of tigers after their loss in Sariska.")
+        
+        # Create a subheader for the awards and recognition
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards and recognition
+        st.write("* Featured in the world’s 100 public intellectuals list issued by US journal Foreign Policy in 2005, 2008, and 2009")
+        st.write("* Awarded Padma Shri in 1992 for her work in the field of environment, especially in climate change and water-related issues")
+
+# Create a button for Sunita Narain's work
+if st.button("View Work"):
+    # Create a container for the work information
+    with st.container():
+        # Create a subheader for the work information
+        st.subheader("Work")
+        
+        # Create a paragraph for the work information
+        st.write("Sunita Narain is a member of the Prime Minister’s Council for Climate Change and the National Ganga River Basin Authority. She has worked extensively on environmental issues, including climate change, water conservation, and sustainable development.")
+        
+        # Create a subheader for the publications
+        st.subheader("Publications")
+        
+        # Create a bullet point list for the publications
+        st.write("* Down To Earth")
+        st.write("* Other publications")
+
+# Create a button for Sunita Narain's contact information
+if st.button("View Contact Information"):
+    # Create a container for the contact information
+    with st.container():
+        # Create a subheader for the contact information
+        st.subheader("Contact Information")
+        
+        # Create a paragraph for the contact information
+        st.write("You can contact Sunita Narain through the Centre for Science and Environment (CSE) website or through her social media profiles.")
+        
+        # Create a bullet point list for the contact information
+        st.write("* Email: [sunita@cseindia.org](mailto:sunita@cseindia.org)")
+        st.write("* Phone: +91-11-29955124")
+        st.write("* Twitter: @sunitanarain")
+        st.write("* LinkedIn: linkedin.com/in/sunitanarain")
