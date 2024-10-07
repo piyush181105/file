@@ -1,0 +1,57 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Medha Patkar")
+
+# Create a subheader for the webpage
+st.subheader("Indian Environmentalist")
+
+# Create a button for Medha Patkar's profile
+if st.button("View Profile"):
+    # Create a container for the profile information
+    with st.container():
+        # Create a subheader for the profile information
+        st.subheader("About Medha Patkar")
+        
+        # Create a paragraph for the profile information
+        st.write("Medha Patkar is a famous environmentalist and is well known for her role in the Narmada Bachao Andolan (NBA). This was the powerful movement against the construction of a dam on the Narmada River. The proposed dam would have displaced more than 320,000 people.")
+        
+        # Create a subheader for the Narmada Bachao Andolan
+        st.subheader("Narmada Bachao Andolan")
+        
+        # Create a paragraph for the Narmada Bachao Andolan
+        st.write("In 1989, Medha Patkar formed the NBA and had been involved since. She took fasting several times as a peaceful means to protest. She was also involved in protesting against corruption alongside Anna Hazare.")
+        
+        # Create a subheader for the awards and recognition
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards and recognition
+        st.write("* Awarded the Right Livelihood Award in 1991")
+        st.write("* Awarded the Goldman Environmental Prize in 1992")
+
+# Create a button for Medha Patkar's work
+if st.button("View Work"):
+    # Create a container for the work information
+    with st.container():
+        # Create a subheader for the work information
+        st.subheader("Work")
+        
+        # Create a paragraph for the work information
+        st.write("Medha Patkar has worked extensively on environmental issues, including the Narmada Bachao Andolan. She has also worked on issues related to corruption and social justice.")
+        
+        # Create a subheader for the organizations founded by Medha Patkar
+        st.subheader("Organizations Founded")
+        
+        # Create a bullet point list for the organizations founded by Medha Patkar
+        st.write("* Narmada Bachao Andolan (NBA)")
+
+# Create a button for Medha Patkar's awards
+if st.button("View Awards"):
+    # Create a container for the awards information
+    with st.container():
+        # Create a subheader for the awards information
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards
+        st.write("* Right Livelihood Award in 1991")
+        st.write("* Goldman Environmental Prize in 1992")
