@@ -1,0 +1,53 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Vandana Shiva")
+
+# Create a subheader for the webpage
+st.subheader("Eco Feminist and Environmentalist")
+
+# Create a button for Vandana Shiva's profile
+if st.button("View Profile"):
+    # Create a container for the profile information
+    with st.container():
+        # Create a subheader for the profile information
+        st.subheader("About Vandana Shiva")
+        
+        # Create a paragraph for the profile information
+        st.write("Vandana Shiva is a Delhi based eco feminist and environmentalist. She is a Gandhi follower and is well known for her efforts to protect forests, conserve local biodiversity, and organize women’s networks. She is a physicist and has authored books such as Staying Alive: Women, Monocultures of the Mind, and Soil Not Oil: Environmental Justice in an Age of Climate Crisis.")
+        
+        # Create a subheader for the awards and recognition
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards and recognition
+        st.write("* Identified as an environmental ‘hero’ by Time Magazine in 2003")
+        st.write("* Awarded the Right Livelihood Award in 1993, which is considered parallel to the Nobel Prize")
+        
+        # Create a subheader for the organizations founded by Vandana Shiva
+        st.subheader("Organizations Founded")
+        
+        # Create a bullet point list for the organizations founded by Vandana Shiva
+        st.write("* Navdanya, a national movement created in 1984 to protect the diversity of living resources")
+        st.write("* Research Foundation for Science, Technology, and Natural Resource Policy in Dehra Dun")
+
+# Create a button for Vandana Shiva's books
+if st.button("View Books"):
+    # Create a container for the books information
+    with st.container():
+        # Create a subheader for the books information
+        st.subheader("Books by Vandana Shiva")
+        
+        # Create a bullet point list for the books
+        st.write("* Staying Alive: Women, Monocultures of the Mind")
+        st.write("* Soil Not Oil: Environmental Justice in an Age of Climate Crisis")
+
+# Create a button for Vandana Shiva's awards
+if st.button("View Awards"):
+    # Create a container for the awards information
+    with st.container():
+        # Create a subheader for the awards information
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards
+        st.write("* Right Livelihood Award in 1993")
+        st.write("* Identified as an environmental ‘hero’ by Time Magazine in 2003")
