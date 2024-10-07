@@ -1,0 +1,133 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Environmental Issues")
+
+# Create a subheader for the webpage
+st.subheader("Causes and Prevention Strategies")
+
+# Create a button for Natural Causes of Environmental Impact
+if st.button("Natural Causes"):
+    # Create a container for the natural causes information
+    with st.container():
+        # Create a subheader for the natural causes information
+        st.subheader("Natural Causes of Environmental Impact")
+        
+        # Create a paragraph for the natural causes information
+        st.write("Natural disasters, climate variability, and volcanic eruptions are some of the natural causes of environmental impact.")
+        
+        # Create a subheader for the natural disasters
+        st.subheader("Natural Disasters")
+        
+        # Create a bullet point list for the natural disasters
+        st.write("* Earthquakes")
+        st.write("* Hurricanes")
+        st.write("* Floods")
+        st.write("* Wildfires")
+        
+        # Create a subheader for the climate variability
+        st.subheader("Climate Variability")
+        
+        # Create a bullet point list for the climate variability
+        st.write("* Droughts")
+        st.write("* Changes in rainfall patterns")
+        st.write("* Temperature fluctuations")
+        
+        # Create a subheader for the volcanic eruptions
+        st.subheader("Volcanic Eruptions")
+        
+        # Create a bullet point list for the volcanic eruptions
+        st.write("* Ash clouds can affect air quality and climate")
+        st.write("* Lava flows can destroy habitats")
+
+# Create a button for Human Causes of Environmental Impact
+if st.button("Human Causes"):
+    # Create a container for the human causes information
+    with st.container():
+        # Create a subheader for the human causes information
+        st.subheader("Human Causes of Environmental Impact")
+        
+        # Create a paragraph for the human causes information
+        st.write("Pollution, deforestation, climate change, overpopulation, agricultural practices, and urbanization are some of the human causes of environmental impact.")
+        
+        # Create a subheader for the pollution
+        st.subheader("Pollution")
+        
+        # Create a bullet point list for the pollution
+        st.write("* Air pollution")
+        st.write("* Water pollution")
+        st.write("* Soil pollution")
+        
+        # Create a subheader for the deforestation
+        st.subheader("Deforestation")
+        
+        # Create a bullet point list for the deforestation
+        st.write("* Logging")
+        st.write("* Agriculture")
+        st.write("* Urban expansion")
+        
+        # Create a subheader for the climate change
+        st.subheader("Climate Change")
+        
+        # Create a bullet point list for the climate change
+        st.write("* Greenhouse gas emissions")
+        st.write("* Fossil fuels")
+        st.write("* Industrial activities")
+        st.write("* Deforestation")
+        
+        # Create a subheader for the overpopulation
+        st.subheader("Overpopulation")
+        
+        # Create a bullet point list for the overpopulation
+        st.write("* Strain on resources")
+        st.write("* Increased waste")
+        st.write("* Habitat destruction")
+        
+        # Create a subheader for the agricultural practices
+        st.subheader("Agricultural Practices")
+        
+        # Create a bullet point list for the agricultural practices
+        st.write("* Use of pesticides")
+        st.write("* Monoculture")
+        st.write("* Overuse of fertilizers")
+        
+        # Create a subheader for the urbanization
+        st.subheader("Urbanization")
+        
+        # Create a bullet point list for the urbanization
+        st.write("* Habitat loss")
+        st.write("* Increased pollution")
+        st.write("* Urban heat islands")
+
+# Create a button for Prevention Strategies
+if st.button("Prevention Strategies"):
+    # Create a container for the prevention strategies information
+    with st.container():
+        # Create a subheader for the prevention strategies information
+        st.subheader("Prevention Strategies")
+        
+        # Create a paragraph for the prevention strategies information
+        st.write("Implementing early warning systems, restoring natural ecosystems, monitoring climate patterns, and promoting sustainable practices are some of the prevention strategies.")
+        
+        # Create a subheader for the natural causes prevention strategies
+        st.subheader("Natural Causes Prevention Strategies")
+        
+        # Create a bullet point list for the natural causes prevention strategies
+        st.write("* Implement early warning systems and disaster preparedness plans")
+        st.write("* Restore natural ecosystems to act as buffers")
+        st.write("* Monitor volcanic activity and develop evacuation plans")
+        
+        # Create a subheader for the human causes prevention strategies
+        st.subheader("Human Causes Prevention Strategies")
+        
+        # Create a bullet point list for the human causes prevention strategies
+        st.write("* Implement stricter regulations on emissions and waste disposal")
+        st.write("* Promote recycling and waste reduction initiatives")
+        st.write("* Transition to renewable energy sources (solar, wind, etc.)")
+        st.write("* Implement energy efficiency measures and promote public transportation")
+        st.write("* Promote family planning and education")
+        st.write("* Develop sustainable urban planning practices")
+        st.write("* Encourage organic farming and permaculture")
+        st.write("* Implement crop rotation and sustainable land management techniques")
+        st.write("* Plan green spaces and sustainable urban designs")
+        st.write("* Invest in public transportation to reduce reliance on cars")
