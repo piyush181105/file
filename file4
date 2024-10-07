@@ -1,0 +1,57 @@
+import streamlit as st
+
+# Create a title for the webpage
+st.title("Chandi Prasad Bhatt")
+
+# Create a subheader for the webpage
+st.subheader("Indian Gandhian Environmentalist")
+
+# Create a button for Chandi Prasad Bhatt's profile
+if st.button("View Profile"):
+    # Create a container for the profile information
+    with st.container():
+        # Create a subheader for the profile information
+        st.subheader("About Chandi Prasad Bhatt")
+        
+        # Create a paragraph for the profile information
+        st.write("Chandi Prasad Bhatt is a social activist and Indian Gandhian environmentalist. He is considered as one of India’s first modern environmentalists. In 1964, he founded Dasholi Gram Swarajya Sangh (DGSS) in Gopeshwar, which later became a mother-organization to the famous Chipko Movement.")
+        
+        # Create a subheader for the awards and recognition
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards and recognition
+        st.write("* Awarded the Ramon Magsaysay Award for Community Leadership in 1982")
+        st.write("* Awarded the Padma Bhushan in 2005")
+        
+        # Create a subheader for the work on subaltern social ecology
+        st.subheader("Work on Subaltern Social Ecology")
+        
+        # Create a paragraph for the work on subaltern social ecology
+        st.write("Chandi Prasad Bhatt is also known for his work on subaltern social ecology. He has worked extensively on the intersection of social and environmental issues, and has been a pioneer in the field of environmentalism in India.")
+
+# Create a button for Chandi Prasad Bhatt's awards
+if st.button("View Awards"):
+    # Create a container for the awards information
+    with st.container():
+        # Create a subheader for the awards information
+        st.subheader("Awards and Recognition")
+        
+        # Create a bullet point list for the awards
+        st.write("* Ramon Magsaysay Award for Community Leadership in 1982")
+        st.write("* Padma Bhushan in 2005")
+
+# Create a button for Chandi Prasad Bhatt's work
+if st.button("View Work"):
+    # Create a container for the work information
+    with st.container():
+        # Create a subheader for the work information
+        st.subheader("Work")
+        
+        # Create a paragraph for the work information
+        st.write("Chandi Prasad Bhatt has worked extensively on environmental issues, including the Chipko Movement. He has also worked on subaltern social ecology, and has been a pioneer in the field of environmentalism in India.")
+        
+        # Create a subheader for the organizations founded by Chandi Prasad Bhatt
+        st.subheader("Organizations Founded")
+        
+        # Create a bullet point list for the organizations founded by Chandi Prasad Bhatt
+        st.write("* Dasholi Gram Swarajya Sangh (DGSS) in Gopeshwar")
