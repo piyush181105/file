@@ -1,0 +1,177 @@
+import streamlit as st
+import pandas as pd
+
+# Create a title for the survey
+st.title("Environmental Awareness Survey")
+
+# Create a dictionary to store the questions and options
+questions = {
+    "1. How would you rate your knowledge about climate change?": {
+        "A": "Very knowledgeable",
+        "B": "Somewhat knowledgeable",
+        "C": "Not very knowledgeable",
+        "D": "Not knowledgeable at all"
+    },
+    "2. Which of the following is a major cause of climate change?": {
+        "A": "Deforestation",
+        "B": "Renewable energy",
+        "C": "Recycling",
+        "D": "Urban gardening"
+    },
+    "3. What is the primary greenhouse gas responsible for global warming?": {
+        "A": "Methane",
+        "B": "Oxygen",
+        "C": "Nitrogen",
+        "D": "Carbon dioxide"
+    },
+    "4. How often do you see litter in your local environment?": {
+        "A": "Always",
+        "B": "Often",
+        "C": "Sometimes",
+        "D": "Never"
+    },
+    "5. What percentage of plastic is recycled globally?": {
+        "A": "20%",
+        "B": "50%",
+        "C": "10%",
+        "D": "30%"
+    },
+    "6. Which of the following is a non-biodegradable material?": {
+        "A": "Food waste",
+        "B": "Paper",
+        "C": "Plastic bags",
+        "D": "Leaves"
+    },
+    "7. Do you use reusable bags when shopping?": {
+        "A": "Always",
+        "B": "Often",
+        "C": "Sometimes",
+        "D": "Never"
+    },
+    "8. How frequently do you conserve water at home?": {
+        "A": "Always",
+        "B": "Often",
+        "C": "Sometimes",
+        "D": "Never"
+    },
+    "9. Have you switched to energy-efficient appliances?": {
+        "A": "Yes, all of them",
+        "B": "Some of them",
+        "C": "No, but planning to",
+        "D": "No, not interested"
+    },
+    "10. What is your primary mode of transportation?": {
+        "A": "Car",
+        "B": "Public transport",
+        "C": "Bicycle",
+        "D": "Walking"
+    },
+    "11. How often do you use public transportation?": {
+        "A": "Daily",
+        "B": "Weekly",
+        "C": "Occasionally",
+        "D": "Never"
+    },
+    "12. Do you consider your carbon footprint when making travel plans?": {
+        "A": "Always",
+        "B": "Sometimes",
+        "C": "Rarely",
+        "D": "Never"
+    },
+    "13. Have you ever participated in an environmental awareness campaign?": {
+        "A": "Yes, multiple times",
+        "B": "Yes, once",
+        "C": "No, but I’d like to",
+        "D": "No, and I’m not interested"
+    },
+    "14. How likely are you to join community clean-up events?": {
+        "A": "Very likely",
+        "B": "Somewhat likely",
+        "C": "Not very likely",
+        "D": "Not likely at all"
+    },
+    "15. Do you believe that individual actions can significantly impact the environment?": {
+        "A": "Strongly agree",
+        "B": "Agree",
+        "C": "Disagree",
+        "D": "Strongly disagree"
+    },
+    "16. How important do you think environmental education is for children?": {
+        "A": "Very important",
+        "B": "Somewhat important",
+        "C": "Not very important",
+        "D": "Not important at all"
+    },
+    "17. Where do you primarily get your information about environmental issues?": {
+        "A": "Social media",
+        "B": "News websites",
+        "C": "Documentaries/books",
+        "D": "Community events"
+    },
+    "18. Which type of media do you trust the most for environmental news?": {
+        "A": "Television",
+        "B": "Online articles",
+        "C": "Social media",
+        "D": "Radio"
+    },
+    "19. How likely are you to change your lifestyle to be more environmentally friendly?": {
+        "A": "Very likely",
+        "B": "Somewhat likely",
+        "C": "Not very likely",
+        "D": "Not likely at all"
+    },
+    "20. Would you be willing to pay more for eco-friendly products?": {
+        "A": "Yes, definitely",
+        "B": "Maybe, depending on the product",
+        "C": "No, not interested",
+        "D": "I already do"
+    },
+    "21. What is your age group?": {
+        "A": "Under 18",
+        "B": "18-24",
+        "C": "25-34",
+        "D": "35 and older"
+    },
+    "22. What is your highest level of education?": {
+        "A": "High school or equivalent",
+        "B": "Some college",
+        "C": "Bachelor’s degree",
+        "D": "Postgraduate degree"
+    },
+    "23. How often do you discuss environmental issues with friends or family?": {
+        "A": "Frequently",
+        "B": "Occasionally",
+        "C": "Rarely",
+        "D": "Never"
+    },
+    "24. Do you think your workplace or school promotes environmental awareness?": {
+        "A": "Yes, very much",
+        "B": "Somewhat",
+        "C": "Not really",
+        "D": "Not at all"
+    },
+    "25. What do you believe is the most effective way to raise awareness about environmental issues?": {
+        "A": "Social media campaigns",
+        "B": "Community workshops",
+        "C": "Educational programs in schools",
+        "D": "Documentaries and films"
+    }
+}
+
+# Create a dictionary to store the user's responses
+responses = {}
+
+# Loop through each question and get the user's response
+for question, options in questions.items():
+    response = st.radio(question, list(options.values()))
+    responses[question] = response
+
+# Create a button to submit the survey
+if st.button("Submit"):
+    # Convert the responses to a pandas dataframe
+    df = pd.DataFrame(responses, index=[0])
+    st.write(df)
+
+    # Save the responses to a CSV file
+    df.to_csv("survey_responses.csv", index=False)
+    st.write("Survey submitted successfully!")
